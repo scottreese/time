@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.io Test - Time</title>
+    <script src="/_socket/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        const socket = io({ path: '/_socket' });
+        socket.emit('ready');
+        socket.on('time', function(data) {
+          $('#time').text(data.time);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Current Time</h1>
+    <p id="time"></p>
+  </body>
+</html>

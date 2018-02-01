@@ -6,7 +6,7 @@
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script type="text/javascript">
       $(function () {
-        const socket = io({ path: '/_socket' });
+        const socket = io({ path: '/_socket', transports: ['websocket'] });
         socket.emit('ready');
         socket.on('time', function(data) {
           $('#time').text(data.time);

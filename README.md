@@ -9,7 +9,7 @@ This app assumes you already have Node.js installed and working on your local ma
 2. Install latest LTS version of Node: `nvm install --lts`
 3. Use the version of Node you just installed: `nvm use --lts`
 
-Install packages for Linux, Mac, and Windows can also be found on the main Node web site [https://nodejs.org/en/download/|here].
+Install packages for Linux, Mac, and Windows can also be found on the main Node web site [here](https://nodejs.org/en/download/).
 
 ## Installation
 1. Clone the repo to your local machine.
